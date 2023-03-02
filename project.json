@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "hello-shader",
+  "id": "1441e9ab-0ae7-416a-b652-704dd7e5d915",
+  "version": "2.4.9",
+  "isNew": false
+}
