@@ -65,10 +65,9 @@ CCProgram fs %{
   uniform sampler2D texture;
   #endif
 
-  uniform  AA{
-
-  vec4 colorLeft;
-   vec4 colorRight;
+  uniform Hello {
+    vec4 colorLeft;
+    vec4 colorRight;
   };
 
   void main () { 
@@ -86,11 +85,9 @@ CCProgram fs %{
       gl_FragColor = o.bgra;
     #else
     if(v_uv0.x < 0.5){
-        gl_FragColor=colorLeft;
-      // gl_FragColor=vec4(0,1,0,1);
+      gl_FragColor = colorLeft;
     }else{
-      gl_FragColor =colorRight;
-      // gl_FragColor=vec4(1,0,0,1);
+      gl_FragColor = colorRight;
     }
     #endif
   }
